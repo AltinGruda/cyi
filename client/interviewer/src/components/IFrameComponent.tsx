@@ -16,6 +16,7 @@ const IframeComponent: React.FC<IframeComponentProps> = ({ joinRoomName }) => {
         border: "0",
         zIndex: 9999
       }}
+      allow="camera;microphone"
       src={iframeUrl}
     />
   );
