@@ -3,7 +3,7 @@ import { FieldValues } from 'react-hook-form';
 export async function createRoom(roomName: FieldValues) {
     try {
         
-        const response = await fetch('http://localhost:5000/room/createRoom', {
+        const response = await fetch('https://gleaming-blue-spacesuit.cyclic.app/room/createRoom', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -24,7 +24,7 @@ export async function createRoom(roomName: FieldValues) {
 
 export async function getAllRooms() {
     try {
-        const response = await fetch('http://localhost:5000/room/rooms');
+        const response = await fetch('https://gleaming-blue-spacesuit.cyclic.app/room/rooms');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
